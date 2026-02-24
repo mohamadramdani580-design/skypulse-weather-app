@@ -1,0 +1,114 @@
+/* ============================================
+   Meteo Page — SkyPulse
+   ============================================ */
+
+.meteo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 24px 80px;
+    gap: 32px;
+    animation: fadeInUp 0.7s ease both;
+}
+
+.meteo__header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.meteo__title {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 800;
+}
+
+.meteo__subtitle {
+    color: #94a3b8;
+    font-size: 1rem;
+}
+
+/* ── Search Bar ── */
+.meteo__search-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 8px 8px 20px;
+    width: 100%;
+    max-width: 560px;
+    border-radius: 999px !important;
+}
+
+.meteo__search-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.meteo__search-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #f1f5f9;
+    min-width: 0;
+}
+
+.meteo__search-input::placeholder {
+    color: #64748b;
+}
+
+.meteo__search-btn {
+    flex-shrink: 0;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    color: white;
+    border: none;
+    border-radius: 999px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+}
+
+.meteo__search-btn:hover:not(:disabled) {
+    transform: scale(1.04);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+}
+
+.meteo__search-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ── Error ── */
+.meteo__error {
+    padding: 16px 24px;
+    border-color: rgba(239, 68, 68, 0.3) !important;
+    background: rgba(239, 68, 68, 0.08) !important;
+}
+
+.meteo__error p {
+    color: #fca5a5;
+    font-size: 0.95rem;
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .meteo {
+        padding: 40px 16px 60px;
+    }
+
+    .meteo__search-wrapper {
+        padding: 6px 6px 6px 16px;
+    }
+
+    .meteo__search-btn {
+        padding: 9px 18px;
+        font-size: 0.85rem;
+    }
+}

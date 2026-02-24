@@ -1,0 +1,154 @@
+/* ============================================
+   About Page — SkyPulse
+   ============================================ */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 24px 80px;
+    gap: 48px;
+    animation: fadeInUp 0.7s ease both;
+}
+
+/* Hero */
+.about__hero {
+    text-align: center;
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.about__title {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 800;
+}
+
+.about__subtitle {
+    color: #94a3b8;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* Developer Card */
+.about__dev-card {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    padding: 32px 36px;
+    width: 100%;
+    max-width: 640px;
+}
+
+.about__dev-avatar {
+    flex-shrink: 0;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6366f1, #38bdf8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: white;
+    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
+}
+
+.about__dev-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.about__dev-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin: 0;
+}
+
+.about__dev-role {
+    font-size: 0.85rem;
+    color: #38bdf8;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin: 0;
+}
+
+.about__dev-desc {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    line-height: 1.6;
+    margin: 4px 0 0;
+}
+
+/* Stack */
+.about__stack-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    max-width: 640px;
+}
+
+.about__stack-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #f1f5f9;
+}
+
+.about__stack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 16px;
+    width: 100%;
+}
+
+.about__stack-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 24px 16px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.about__stack-item:hover {
+    transform: translateY(-4px);
+}
+
+.about__stack-icon {
+    font-size: 2rem;
+}
+
+.about__stack-name {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #f1f5f9;
+}
+
+.about__stack-desc {
+    font-size: 0.75rem;
+    color: #64748b;
+}
+
+@media (max-width: 600px) {
+    .about {
+        padding: 40px 16px 60px;
+    }
+
+    .about__dev-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 28px 20px;
+    }
+
+    .about__dev-info {
+        align-items: center;
+    }
+}
