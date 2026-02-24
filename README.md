@@ -1,16 +1,29 @@
-# React + Vite
+🚀 **Refonte complète : SkyPulse — Une expérience météo moderne avec React**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Je suis heureux de partager mon dernier projet **SkyPulse**, une application météo moderne développée avec **React**.
 
-Currently, two official plugins are available:
+Partant d’une base simple, j’ai réalisé une refonte complète afin de transformer cette application en une interface **fluide, performante et professionnelle**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🛠 **Stack technique :**
+• ⚛️ React 18 + Vite pour des performances rapides
+• 🔀 React Router pour une navigation SPA sans rechargement
+• 🌦 API météo de OpenWeather pour les données en temps réel
+• 🎨 CSS personnalisé avec un design system moderne
 
-## React Compiler
+✨ **Améliorations principales :**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🎨 **UI/UX moderne**
+Adoption d’un design **Glassmorphism** avec des effets de flou et des dégradés dynamiques.
 
-## Expanding the ESLint configuration
+📊 **Données météo enrichies**
+Affichage de nouvelles informations : humidité, vitesse du vent et température ressentie directement depuis l’API.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📱 **Responsive Design**
+Interface optimisée pour **mobile, tablette et desktop**.
+
+⚡ **Animations fluides**
+Utilisation de **CSS Keyframes** pour des transitions et effets visuels qui donnent vie à l’interface.
+
+💡 Ce projet m’a permis d’approfondir mes compétences en **intégration d’API**, **architecture Frontend** et **design system CSS**.
+
+#ReactJS #FrontendDevelopment #WebDevelopment #UXDesign #ViteJS #OpenWeatherMap
